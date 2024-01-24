@@ -19,9 +19,9 @@ jobs:
         uses: trunk-io/analytics-uploader@main
         with:
           # Path to your test results.
-          junit_paths: target/path/**/*_test.xml
+          junit-paths: target/path/**/*_test.xml
           # Provide your Trunk organization url slug.
-          org_url_slug: xyzw-io
+          org-url-slug: xyzw-io
           # Provide your Trunk API token as a GitHub secret.
           # See https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions.
           token: ${{ secrets.TRUNK_API_TOKEN }}
